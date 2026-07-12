@@ -14,7 +14,7 @@ unzip -q /tmp/awscliv2.zip -d /tmp
 /tmp/aws/install
 
 # Download website from S3
-aws s3 cp s3://musthaqecluaseterraform/Server2/ /var/www/html/ --recursive
+aws s3 cp s3://<YourBucketName>/<FolderName>/ /var/www/html/ --recursive
 
 systemctl enable apache2
 systemctl restart apache2
